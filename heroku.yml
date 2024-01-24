@@ -1,3 +1,4 @@
+build: "null"
 run:
    worker: yarn start
    web: yarn start
