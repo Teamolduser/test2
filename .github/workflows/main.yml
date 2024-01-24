@@ -16,7 +16,6 @@ jobs:
           heroku_app_name: "aabb0" # Must be unique in Heroku
           heroku_email: "Heroku@queenanya.run.place"
           stack: "container"
-          usedocker: true
           procfile: "worker: yarn start"
           branch: "web"
       - name: Deploy to Heroku
