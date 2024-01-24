@@ -17,7 +17,7 @@ jobs:
           heroku_email: "Heroku@queenanya.run.place"
           stack: "container"
           procfile: "worker: yarn start"
-          branch: "web"
+          branch: "master"
       - name: Deploy to Heroku
         run: |
           heroku open -a aabb0
