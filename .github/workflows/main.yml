@@ -3,7 +3,7 @@ name: Deploy-@2
 on:
   push:
     branches:
-      - web # Changing the branch here would also work
+      - master # Changing the branch here would also work
 
 jobs:
   build:
