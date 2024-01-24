@@ -1,5 +1,5 @@
 build:
-   docker: null
+   docker: "null"
 run:
    worker: yarn start
    web: yarn start
