@@ -1,6 +1,4 @@
-build:
-  docker:
-      worker: yarn install
+build: yarn install
 run:
    worker: yarn start
    web: yarn start
