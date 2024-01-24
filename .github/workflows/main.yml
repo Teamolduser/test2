@@ -1,0 +1,24 @@
+name: Deploy-@2
+
+on:
+  push:
+    branches:
+      - web # Changing the branch here would also work
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "aabb0" # Must be unique in Heroku
+          heroku_email: "Heroku@queenanya.run.place"
+          stack: "container"
+          usedocker: true
+          procfile: "worker: yarn start"
+          branch: "web"
+      - name: Deploy to Heroku
+        run: |
+          heroku open -a aabb0
