@@ -15,7 +15,6 @@ jobs:
           heroku_api_key: "2f8b38f9-d52f-4089-8959-4c8c16041cbd"
           heroku_app_name: "aabb0" # Must be unique in Heroku
           heroku_email: "Heroku@queenanya.run.place"
-          stack: "container"
           procfile: "worker: yarn start"
           branch: "master"
       - name: Deploy to Heroku
